@@ -34,33 +34,17 @@
 					<key>XCSourceEditorCommandClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SourceEditorCommand</string>
 					<key>XCSourceEditorCommandIdentifier</key>
-					<string>FH.Jumper.Jumper-extension.Up5</string>
+					<string>FH.Jumper.Jumper-extension.Up10</string>
 					<key>XCSourceEditorCommandName</key>
-					<string>Up 5 lines</string>
+					<string>Up 10 lines</string>
 				</dict>
 				<dict>
 					<key>XCSourceEditorCommandClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SourceEditorCommand</string>
 					<key>XCSourceEditorCommandIdentifier</key>
-					<string>FH.Jumper.Jumper-extension.Down5</string>
+					<string>FH.Jumper.Jumper-extension.Down10</string>
 					<key>XCSourceEditorCommandName</key>
-					<string>Down 5 lines</string>
-				</dict>
-				<dict>
-					<key>XCSourceEditorCommandClassName</key>
-					<string>$(PRODUCT_MODULE_NAME).SourceEditorCommand</string>
-					<key>XCSourceEditorCommandIdentifier</key>
-					<string>FH.Jumper.Jumper-extension.Up2</string>
-					<key>XCSourceEditorCommandName</key>
-					<string>Up 2 lines</string>
-				</dict>
-				<dict>
-					<key>XCSourceEditorCommandClassName</key>
-					<string>$(PRODUCT_MODULE_NAME).SourceEditorCommand</string>
-					<key>XCSourceEditorCommandIdentifier</key>
-					<string>FH.Jumper.Jumper-extension.Down2</string>
-					<key>XCSourceEditorCommandName</key>
-					<string>Down 2 lines</string>
+					<string>Down 10 lines</string>
 				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>

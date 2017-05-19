@@ -15,10 +15,8 @@ struct LineShift {
 }
 
 enum ShiftCommand {
-    case up5(String, Int)
-    case down5(String, Int)
-    case up2(String, Int)
-    case down2(String, Int)
+    case up10(String, Int)
+    case down10(String, Int)
 }
 
 class SourceEditorCommand: NSObject, XCSourceEditorCommand {
@@ -30,16 +28,17 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
         if let insertionRange = insertionRange(buffer: buffer) {
             var shiftValue = 0
             switch invocation.commandIdentifier {
-                case "FH.Jumper.Jumper-extension.Up5"   : shiftValue = -5
-                case "FH.Jumper.Jumper-extension.Down5" : shiftValue = 5
-                case "FH.Jumper.Jumper-extension.Up2"   : shiftValue = -2
-                case "FH.Jumper.Jumper-extension.Down2" : shiftValue = 2
-                
+                case "FH.Jumper.Jumper-extension.Up10"   : shiftValue = -10
+                case "FH.Jumper.Jumper-extension.Down10" : shiftValue = 10
                 default: ()
             }
             
             buffer.selections.removeAllObjects()
-            buffer.selections[0] = shiftedRange(initialRange: insertionRange, linesShift: shiftValue, buffer: buffer)
+            let range = shiftedRange(initialRange: insertionRange, linesShift: shiftValue, buffer: buffer)
+            print(range)
+            buffer.selections[0] = range
+//            let text = buffer.completeBuffer
+//            buffer.completeBuffer = text
         }
         
         completionHandler(nil)
